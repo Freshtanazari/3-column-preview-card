@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');   
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    font-size: 15px;
+    color: white;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+}
+
+.heading {
+    display: block;
+    margin: 30px 0;
+    font-family:'Big Shoulders Display' ;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family:'Lexend Deca' ;
+}
+
+button {
+    margin-top: 30px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 23px; 
+    cursor: pointer;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 50px 60px;
+    margin: 0;
+}
+
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
+.suvs{
+    background-color:hsl(184, 100%, 22%) ;
+}
+
+.luxury{
+    background-color:hsl(179, 100%, 13%) ;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+#btn3 {
+    color:hsl(179, 100%, 13%) ;
+}
+#btn2 {
+   color: hsl(184, 100%, 22%);
+}
+#btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn3:hover {
+    color: white;
+    background-color:hsl(179, 100%, 13%) ;
+}
+#btn2:hover {
+    color: white;
+   background-color: hsl(184, 100%, 22%);
+}
+#btn1:hover {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}
+button:hover {
+    border: 3px solid white; 
+}
+
+@media only screen and (min-width: 800px ){
+    .container {
+        height:auto;
+        display: flex;
+        margin: 150px 350px;
+        flex-direction: row;
+    }
+    .sedans{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .luxury{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    #btn2 {
+        margin-top:100px ;
+    }
+    #btn1, #btn3 {
+        margin-top: 80px;
+    }
+}
